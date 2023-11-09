@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-umne
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/cin4s-839-0096-tenant/cin4s-839-0096-app/devfile-sample-umne@sha256:aa6c573ba5ee9ad7aa2fe59b3f11f8cbafad3b78a7996ff419249deecff0768f
+        name: my-nodejs
+        resources: {}
+status: {}
